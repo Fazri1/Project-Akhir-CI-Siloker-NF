@@ -94,15 +94,15 @@
                                 </nav>
                             </div>
                             <div class="sb-sidenav-menu-heading">Mitra</div>
-                            <a class="nav-link" href="editmitrausaha.html">
+                            <a class="nav-link" href="<?=base_url()?>mitra">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Edit Mitra
+                                Mitra
                             </a>
-                            <a class="nav-link" href="bidangusaha.html">
+                            <a class="nav-link" href="<?=base_url()?>bidang_usaha">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Bidang Usaha
                             </a>
-                            <a class="nav-link" href="sektorusaha.html">
+                            <a class="nav-link" href="<?=base_url()?>sektor_usaha">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Sektor Usaha
                             </a>
@@ -116,3 +116,4 @@
             </div>
             <div id="layoutSidenav_content">
             <main>
+            <div class="container-fluid">
