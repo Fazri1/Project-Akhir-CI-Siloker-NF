@@ -50,7 +50,9 @@ class Sektor_usaha extends CI_Controller {
         $this->load->model('all_model','sektor');
 		$data_sektor['id'] = $id;
 		// pastikan role diizinkan
-		$this->sektor->delete('sektor_usaha', $data_sektor);
+        $this->sektor->delete('sektor_usaha', $data_sektor);
+        
+        
 		redirect('sektor_usaha', 'refresh');
     }
 }

@@ -23,6 +23,15 @@ class All_model extends CI_Model {
 
     public function delete($nama, $data){
         $sql = "DELETE FROM ".$nama." WHERE id=?";
-        $this->db->query($sql, $data);
+        if ($this->db->error()){
+            echo "<script>alert('Tidak Bisa Menghapus Data')</script>";
+            if ($nama == 'bidang_usaha'){
+                redirect('bidang_usaha', 'refresh');
+            }else{
+                redirect('sektor_usaha', 'refresh');
+            }
+        }else{
+            $this->db->query($sql, $data);
+        }
     }
 }
